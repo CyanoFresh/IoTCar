@@ -44,7 +44,6 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        Yii::$app->user->identity->username;
         return $this->render('index');
     }
 

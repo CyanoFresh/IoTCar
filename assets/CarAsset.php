@@ -4,19 +4,18 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class AppAsset extends AssetBundle
+class CarAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'css/car.css',
     ];
     public $js = [
-        'js/site.js',
+        'js/car.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'rmrevin\yii\fontawesome\AssetBundle',
+        'app\assets\AppAsset',
+        'yii\web\JqueryAsset',
     ];
 }

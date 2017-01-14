@@ -5,6 +5,9 @@
     "yiisoft/yii2": "~2.0.6",
     "yiisoft/yii2-bootstrap": "*",
     "yiisoft/yii2-swiftmailer": "*",
+    "cboden/ratchet": "*",
+    "ratchet/pawl": "^0.2.2",
+    "rmrevin/yii2-fontawesome": "~2.12",
     "rmrevin/yii2-minify-view": "*"
   },
   "require-dev": {

@@ -54,5 +54,42 @@ $(document).ready(function () {
                 'type': $(this).data('action')
             });
         });
+
+        $(document).bind('keydown', 'up', function (e) {
+            $('.control-btn.control-move-forward').addClass('disabled');
+            send({
+                'type': 'move.forward'
+            });
+        });
+        $(document).bind('keyup', 'up', function (e) {
+            $('.control-btn.control-move-forward').removeClass('disabled');
+        });
+        $(document).bind('keydown', 'down', function (e) {
+            $('.control-btn.control-move-backward').addClass('disabled');
+            send({
+                'type': 'move.backward'
+            });
+        });
+        $(document).bind('keyup', 'down', function (e) {
+            $('.control-btn.control-move-backward').removeClass('disabled');
+        });
+        $(document).bind('keydown', 'left', function (e) {
+            $('.control-btn.control-move-left').addClass('disabled');
+            send({
+                'type': 'move.left'
+            });
+        });
+        $(document).bind('keyup', 'left', function (e) {
+            $('.control-btn.control-move-left').removeClass('disabled');
+        });
+        $(document).bind('keydown', 'right', function (e) {
+            $('.control-btn.control-move-right').addClass('disabled');
+            send({
+                'type': 'move.right'
+            });
+        });
+        $(document).bind('keyup', 'right', function (e) {
+            $('.control-btn.control-move-right').removeClass('disabled');
+        });
     });
 });

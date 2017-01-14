@@ -13,6 +13,7 @@ class CarAsset extends AssetBundle
     ];
     public $js = [
         'js/car.js',
+        'js/jquery.hotkeys.js',
     ];
     public $depends = [
         'app\assets\AppAsset',
